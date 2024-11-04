@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P1-M11</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { width: 95%; margin: auto; }
+        .dropdown { margin-bottom: 20px; }
+        .time-title, .level-title { font-size: 1.2em; font-weight: bold; }
+        .activity { margin-bottom: 30px; }
+        .banner { background-color: #4CAF50; color: white; padding: 10px; cursor: pointer; }
+        .title { font-weight: bold; }
+        .subtitle { font-style: italic; }
+        .content { display: none; padding: 10px; border: 1px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ddd; vertical-align: top; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Playbook-P1-M11</h1>
+        
+        <div class="dropdown">
+            <label for="class-time">Tiempo efectivo de Clase:</label>
+            <select id="class-time" onchange="updateContent()">
+                <option value="50">50 minutos</option>
+                <option value="45">45 minutos</option>
+                <option value="40">40 minutos</option>
+            </select>
+        </div>
+
+        <h2 id="selected-time" class="time-title">Tiempo efectivo de clase: 50 minutos</h2>
+
+        <!-- Aquí comenzarán las actividades -->
+<!-- Actividad 0 -->
+<div id="activity-0" class="activity">
+    <div class="banner" onclick="toggleContent('revision_mision')">
+        <div class="title">📚 Actividad 0: Revisión de Misión ⏰ Tiempo: N/A</div>
+        <div class="subtitle">Revisar los recursos necesarios para la misión.</div>
+    </div>
+    <div id="revision_mision" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (N/A):</strong> Proyectar Diapositiva 1 y revisar los recursos. Comprobar que el enlace al juego funcione correctamente y que los dispositivos tengan acceso a internet y un mouse funcional.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> N/A</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 1 -->
+<div id="activity-1" class="activity">
+    <div class="banner" onclick="toggleContent('saludo_ritual_gnius')">
+        <div class="title">🎉 Actividad 1: Saludo y Ritual Gnius Club ⏰ Tiempo: 2.5 minutos</div>
+        <div class="subtitle">Dar la bienvenida a los Genios y preparar el ambiente para el aprendizaje.</div>
+    </div>
+    <div id="saludo_ritual_gnius" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 2: "Gnius Club". El maestro saluda a los estudiantes y les presenta el tema del día.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Hola, Genios! ¿Están listos para una nueva misión? Hoy vamos a aprender a defendernos de unos fantasmas que quieren alcanzarnos. Pero con su rapidez, ¡sé que los mantendrán lejos! ¿Quién está emocionado por la aventura?"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 3: "¿Cómo están?" y pedir a los estudiantes que hagan gestos para expresar su estado de ánimo.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Vamos a ver cómo se sienten hoy para enfrentar a esos fantasmas! Si están llenos de energía y listos para la misión, pónganse en pose de Rayo: brazos en alto como si fueran un relámpago. Si se sienten un poco cansados y necesitan más energía, pónganse en pose de Descanso: crucen los brazos y bajen un poco la cabeza. ¡A ver esos Rayos y Descansos!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (0.5 minutos):</strong> Proyectar Diapositiva 4: "Gracias por Asistir" y guiar a los estudiantes en el ritual de agradecimiento.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora todos juntos vamos a juntar nuestras manos y decir: '¡Gracias por estar aquí, Genios! Hoy vamos a aprender algo nuevo y emocionante. ¡A derrotar esos fantasmas!'"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (0.5 minutos):</strong> Proyectar Diapositiva 5: "Objetivos de la Misión" y leer los objetivos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Hoy tenemos tres grandes objetivos:<br></strong> 1)</strong> Practicar nuestra rapidez al teclear palabras para evitar que los fantasmas nos toquen.<br> </strong>2)</strong> Completar desafíos de diferentes niveles.<br> </strong>3)</strong> Trabajar en equipo para darnos apoyo y vencer juntos.<br> ¡Va a ser emocionante!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 2 -->
+<div id="activity-2" class="activity">
+    <div class="banner" onclick="toggleContent('brain_vitamin')">
+        <div class="title">🧠 Actividad 2: Brain Vitamin ⏰ Tiempo: 4 minutos</div>
+        <div class="subtitle">Ejercicio de gimnasia cerebral para preparar a los Genios.</div>
+    </div>
+    <div id="brain_vitamin" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (1 minuto):</strong> Proyectar Diapositiva 6: "Atrapa al Fantasma". El maestro introduce el ejercicio de gimnasia cerebral.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios, antes de enfrentarnos a los fantasmas, necesitamos afinar nuestra rapidez mental y coordinación! Hoy haremos un ejercicio especial llamado 'Atrapa al Fantasma' para tener esos dedos y cerebros listos. ¡Prepárense para la acción!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (2 minutos):</strong> Proyectar Diapositiva 7 y guiar a los niños en el ejercicio de "Atrapa al Fantasma".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Para 'Atrapa al Fantasma', usaremos ambas manos y ambos lados del cerebro. Primero, toquen su oreja derecha con la mano izquierda y luego la oreja izquierda con la mano derecha, ¡como si atraparan un fantasma en cada lado! Luego, toquen con cada dedo de una mano los dedos de la otra. ¡Vamos, atrapen esos fantasmas cruzados!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (1 minuto):</strong> Proyectar Diapositiva 8: "Respiración Profunda". El maestro guía a los niños en una breve respiración.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Para estar listos y enfocados, vamos a respirar profundamente tres veces. Imaginen que toman aire como si estuvieran recogiendo toda su energía, y luego suelten el aire, como si estuvieran alejando a un fantasma que se acerca. ¡Fantástico! Ahora estamos listos para el reto."</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 3 -->
+<div id="activity-3" class="activity">
+    <div class="banner" onclick="toggleContent('challenge')">
+        <div class="title">🏆 Actividad 3: Challenge ⏰ Tiempo: 29.5 minutos</div>
+        <div class="subtitle">Superar diferentes niveles de desafíos en el juego.</div>
+    </div>
+    <div id="challenge" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 9: "Portada del Challenge". Explicar que hay tres niveles de desafíos, cada uno con diferentes grados de dificultad.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios, ha llegado el momento del gran desafío! Hoy deben evitar que los fantasmas los toquen mientras escriben. Tienen tres opciones de desafío: <strong>Rookie</strong>, <strong>Master</strong> y <strong>Hacker</strong>. ¿Quién está listo para elegir su reto y demostrar su rapidez?"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (2 minutos):</strong> Proyectar Diapositiva 10: "Explicación de los Challenges". El maestro explica cada nivel de manera sintetizada.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong><br> "En el desafío <strong>Rookie</strong>, tendrán que teclear 20 palabras sin que los fantasmas se acerquen. <br> En el desafío <strong>Master</strong>, deberán escribir 35 palabras. <br> Y el desafío <strong>Hacker</strong> es para los más rápidos: tendrán que lograr 70 palabras. <br> ¡Elijan el nivel que los rete más!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (25 minutos):</strong> Proyectar Diapositiva 11: "Temporizador de 25 minutos". Supervisar y asistir a los estudiantes mientras trabajan en su desafío.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen 25 minutos para completar su reto. ¡Concéntrense y trabajen a su ritmo! Si terminan rápido, ¡pueden intentar el siguiente nivel!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (1 minuto):</strong> Proyectar la Diapositiva 12: "Revisión de Objetivos".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Genios, hemos logrado cumplir algunos de los objetivos de la misión: mejorar nuestra rapidez en el teclado y evitar que los fantasmas nos alcancen. ¡Fantástico trabajo!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 4 -->
+<div id="activity-4" class="activity">
+    <div class="banner" onclick="toggleContent('team_gnius')">
+        <div class="title">🤝 Actividad 4: Team Gnius ⏰ Tiempo: 13 minutos</div>
+        <div class="subtitle">Formación de equipos y preparación para el reto en equipo.</div>
+    </div>
+    <div id="team_gnius" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (1 minuto):</strong> Proyectar Diapositiva 13: "Formación de Equipos". El maestro explica que se formarán equipos de 2 estudiantes: uno será el Líder y el otro será el Programador.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Genios, ahora vamos a trabajar en equipo. Uno de ustedes será el Líder y el otro será el Programador. El Programador jugará el reto mientras el Líder le deletrea las palabras y anota las puntuaciones en su Magic Board. ¡Vamos a dar lo mejor en equipo!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (0.5 minutos):</strong> Proyectar Diapositiva 14: Temporizador de 30 segundos para que los estudiantes se organicen en equipos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen 30 segundos para formar sus equipos. ¡Busquen un compañero y prepárense para trabajar juntos! ¡El tiempo corre!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (1 minuto):</strong> Proyectar Diapositiva 15: Instruir a los estudiantes para que un integrante de cada equipo recoja una Magic Board.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Antes de comenzar, un integrante de cada equipo debe ir a recoger una Magic Board. ¡Solo uno por equipo! ¡Vamos, Genios!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (0.5 minutos):</strong> Proyectar Diapositiva 16: Temporizador de 30 segundos para que los equipos recojan las Magic Boards.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen 30 segundos para recoger las Magic Boards. ¡Solo un miembro del equipo puede ir a recogerla! ¡Rápido, que el tiempo corre!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 5 (4 minutos):</strong> Proyectar Diapositiva 17: Temporizador de 4 minutos. Supervisar mientras los equipos trabajan en conjunto.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Durante estos 4 minutos, el Programador participará en el reto y el Líder le deletreará las palabras para que el Programador pueda escribirlas rápidamente y evitar que los fantasmas se acerquen. El Líder también anotará las puntuaciones en la Magic Board. ¡Trabajen juntos para ganar puntos!"</td>
+            </tr>
+            <tr id="team_gnius_step_6">
+                <td><strong>PASO 6 (4 minutos):</strong> Proyectar Diapositiva 18: Temporizador de 4 minutos para el intercambio de roles.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora es momento de intercambiar roles. El Líder se convertirá en el Programador y el Programador se convertirá en el Líder. ¡Vamos a seguir trabajando en equipo!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 7 (2 minutos):</strong> Proyectar Diapositiva 19: Reflexión en equipo sobre el desempeño.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora que cada uno tuvo la oportunidad de ser Líder y Programador, tómense un momento para reflexionar. ¿Qué funcionó bien? ¿Cómo ayudaron las indicaciones del Líder al Programador para mejorar? ¿Cómo podrían mejorar juntos la próxima vez?"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 5 -->
+<div id="activity-5" class="activity">
+    <div class="banner" onclick="toggleContent('honor_dojo')">
+        <div class="title">🎖️ Actividad 5: Honor de Dojo ⏰ Tiempo: 2.5 minutos</div>
+        <div class="subtitle">Cierre de la sesión y reconocimiento del esfuerzo del equipo.</div>
+    </div>
+    <div id="honor_dojo" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 20: "Revisión de Objetivos". El maestro reconoce el esfuerzo colectivo y destaca los logros del grupo en general.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios, han hecho un trabajo increíble hoy! Han mejorado su rapidez al teclear, trabajado en equipo y mantenido a los fantasmas a raya. ¡Estoy muy orgulloso de su esfuerzo y colaboración! Observen que hemos cumplido los objetivos de hoy."</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (2 minutos):</strong> Proyectar Diapositiva 21: "Honor de Dojo". Guiar a los estudiantes en la recogida y organización de los materiales y el aula.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora, Genios, es hora de honrar nuestro espacio de trabajo. Vamos a devolver todo el material que utilizamos hoy y asegurarnos de que el aula quede tan ordenada como la encontramos. ¡Vamos a dejar este espacio impecable!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+    </div> <!-- Cierre del container -->
+
+    <!-- Scripts adicionales -->
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+
+        function updateContent() {
+            var time = document.getElementById("class-time").value;
+            document.getElementById("selected-time").innerText = "Tiempo efectivo de clase: " + time + " minutos";
+
+            // Lógica para mostrar u ocultar actividades según el tiempo seleccionado
+            document.getElementById("activity-2").style.display = time <= 45 ? "none" : "block";
+            document.getElementById("team_gnius_step_6").style.display = time == 40 ? "none" : "table-row";
+        }
+
+        // Inicializar el contenido según la selección predeterminada
+        updateContent();
+    </script>
+
+</body>
+</html>
